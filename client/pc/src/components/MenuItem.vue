@@ -38,7 +38,7 @@
 	.item_box {
 		position: relative;
 		width: 100%;
-		height: 332px;
+		height: 300px;
 		font-size: 0;
 	}
 	.item_box:hover {

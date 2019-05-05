@@ -38,6 +38,7 @@
 	export default {
 		name: 'registered',
 		mounted: function() {
+			document.querySelector("#Header").style.display="block";
 			this.$store.commit('changeTopFlag', 0)
 		},
 		components: {
@@ -49,7 +50,88 @@
 				repwd:'',
 				name:'',
 				sex: '0',
-				options: [{
+				options: [
+				{
+					value: '贵州省',
+					label: '贵州省',
+					children: [{
+						value: '贵阳市',
+						label: '贵阳市',
+						children: [{
+							value: '开阳县',
+							label: '开阳县'
+						}, {
+							value: '白云区',
+							label: '白云区'
+						}, {
+							value: '观山湖区',
+							label: '观山湖区'
+						}, {
+							value: '乌当区',
+							label: '乌当区'
+						}, {
+							value: '息烽县',
+							label: '息烽县'
+						}, {
+							value: '清镇市',
+							label: '清镇市'
+						}, {
+							value: '花溪区',
+							label: '凤岗县'
+						}, {
+							value: '云岩区',
+							label: '云岩区'
+						}, {
+							value: '南明区',
+							label: '南明区'
+						}]
+					}, {
+						value: '铜仁市',
+						label: '铜仁市',
+						children: [{
+							value: '印江土家族苗族自治县',
+							label: '印江土家族苗族自治县'
+						}, {
+							value: '石阡县',
+							label: '石阡县'
+						}, {
+							value: '玉屏侗族自治县',
+							label: '玉屏侗族自治县'
+						}, {
+							value: '碧江区',
+							label: '碧江区'
+						}, {
+							value: '思南县',
+							label: '思南县'
+						}, {
+							value: '沿河土家族自治县',
+							label: '沿河土家族自治县'
+						}, {
+							value: '德江县',
+							label: '德江县'
+						}, {
+							value: '江口县',
+							label: '江口县'
+						}, {
+							value: '万山区',
+							label: '万山区'
+						}]
+					}, {
+						value: '毕节市',
+						label: '毕节市',
+					}, {
+						value: '安顺市',
+						label: '安顺市',
+					}, {
+						value: '六盘水市',
+						label: '六盘水市',
+					}, {
+						value: '遵义市',
+						label: '遵义市',
+			
+					}]
+				}, 
+				{
 					value: '云南省',
 					label: '云南省',
 					children: [{

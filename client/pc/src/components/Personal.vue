@@ -44,6 +44,7 @@
 	export default {
 		name: 'Personal',
 		mounted: function() {
+			document.querySelector("#Header").style.display="block";
 			this.$store.commit('changeTopFlag', 0);
 			this.initialize()
 		},

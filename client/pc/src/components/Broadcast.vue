@@ -208,7 +208,6 @@
 		position: relative;
 		width: 1011px;
 		height: 389px;
-		margin-top: 120px;
 	}
 	
 	.box {
@@ -227,11 +226,11 @@
 	}
 	
 	.bgLeft {
-		left: -1011px;
+		left: -900px;
 	}
 	
 	.bgRight {
-		right: -1011px;
+		right: -1144px;
 	}
 	
 	.prev_btn,
@@ -248,12 +247,12 @@
 	}
 	
 	.prev_btn {
-		left: -60px;
+		left: -8px;
 		background-position: 0 6px;
 	}
 	
 	.next_btn {
-		right: -60px;
+		right: -251px;
 		background-position: -174px 6px;
 	}
 	
@@ -292,23 +291,23 @@
 	}
 	
 	.leftOne {
-		left: -1011px;
+		left: -1615px;
 	}
 	
 	.leftTwo {
-		left: -2022px;
+		left: -2305px;
 	}
 	
 	.leftThr {
-		left: -3033px;
+		left: -2995px;
 	}
 	
 	.leftFour {
-		left: -4044px;
+		left: -4030px;
 	}
 	
 	.leftFive {
-		left: -5055px;
+		left: -4720px;
 	}
 	
 	.times {

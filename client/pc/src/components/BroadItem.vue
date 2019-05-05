@@ -1,6 +1,6 @@
 <template>
 	<div class="item">
-		<h1>今日晚餐推荐：炊烟起，人相聚</h1>
+	<!--	<h1>唯美食和爱不可辜负</h1>-->
 		<ul>
 			<li v-for="item in list">
 				<div>
@@ -51,7 +51,7 @@
 		display: inline-block;
 	}
 	.item img {
-		width: 337px;
+		width: 345px;
 		height: 337px;
 	}
 	.text {

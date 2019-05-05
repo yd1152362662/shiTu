@@ -21,21 +21,21 @@
 
 <style scoped>
 	.box {
-		width: 976px;
+		width: 1100px;
 		height: 132px;
 		padding: 0;
 	}
 	
 	a {
 		position: relative;
-		width: 117px;
+		width: 132px;
 		height: 117px;
 		float: left;
 		margin-right: 5px;
 	}
 	
 	a img {
-		width: 117px;
+		width: 132px;
 		height: 117px;
 	}
 	
@@ -43,7 +43,7 @@
 		position: absolute;
 		display: inline-block;
 		bottom: 0px;
-		width: 117px;
+		width: 132px;
 		height: 28px;
 		background-color: rgba(255, 255, 255, .8);
 	}

@@ -76,6 +76,14 @@ app.get('/recipe_vedio',vedioController.vedios);
 
 app.get('/vedio_info',vedioController.vedioInfo);
 
+//查询路由控制
+var SearchController = require('./Controllers/SearchController');
+
+app.get('/search',SearchController.searchFun)
+
+
+
 app.listen(9999, function () {
     console.log('Server is running...');
 });
+

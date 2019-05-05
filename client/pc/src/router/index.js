@@ -15,6 +15,7 @@ import VedioPlayer from '@/components/VedioPlayer.vue'
 import Personal from '@/components/Personal.vue'
 import Loadding from '@/components/Loadding.vue'
 import Phone from '@/components/Phone.vue'
+import Search from '@/components/Search.vue'
 
 Vue.use(Router)
 
@@ -99,6 +100,11 @@ export default new Router({
     	path: '/phone',
       name: 'Phone',
       component: Phone
+    },
+    {
+    	path: '/search',
+      name: 'Search',
+      component: Search
     }
   ],
   mode: 'history',

@@ -4,10 +4,10 @@
 		<div class="menus">
 			<div class="upper">
 				<el-row :gutter='20'>
-					<el-col :span='6' class='menu' v-for='(item,index) in list' :key='index'>
+					<el-col  class='menu' v-for='(item,index) in list' :key='index'>
 						<menuItem :menuInfo='item'></menuItem>
 					</el-col>
-					<el-col :span='6' class='menu'>
+					<el-col  class='menu'>
 						<div class="hot_menu">
 							<h2>热门栏目推荐</h2>
 							<ul>
@@ -75,10 +75,10 @@
 
 <style scoped>
 	.cases {
-		width: 1011px;
+		width: 1140px;
 		height: 804px;
 		float: left;
-		margin-right: 6px;
+		padding: 0 20px;
 	}
 	
 	.cases h2 {
@@ -105,6 +105,7 @@
 	}
 	
 	.menu {
+		width: 24%;
 		height: 332px;
 		margin-bottom: 20px;
 	}

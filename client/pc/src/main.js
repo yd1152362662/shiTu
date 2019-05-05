@@ -25,6 +25,7 @@ Vue.use(Vuex);
 const store = new Vuex.Store({
 	state: {
 		topFlag: 0,
+		search:'',
 		userState:{
 			flag:false,
 			u_name:'',

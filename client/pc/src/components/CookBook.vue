@@ -134,6 +134,7 @@
 	export default {
 		name: 'CookBook',
 		mounted: function() {
+			document.querySelector("#Header").style.display="block"
 			this.$store.commit('changeTopFlag', 2);
 			let _this = this;
 			_this.$http.get('/cook_book', {
@@ -190,7 +191,7 @@
 	
 	.left_img img {
 		width: 100%;
-		min-height: 452px;
+		height: 452px;
 	}
 	
 	.right_box {

@@ -64,6 +64,8 @@
 	export default {
 		name: 'Home',
 		mounted: function() {
+			document.querySelector("#Header").style.display="block";
+//			location.reload()
 			this.$store.commit('changeTopFlag', 1)
 			let _this = this;
 			_this.$http.get('/home',{
@@ -143,20 +145,20 @@
 	}
 	
 	.box {
-		width: 971px;
+		width: 1100px;
 		height: 192px;
 		padding: 0 20px;
 		background-color: white;
 	}
 	
 	.middle {
-		width: 100%;
-		height: 804px;
+		width: 1140px;
+		height: 850px;
 	}
 	
 	.bottom {
 		position: relative;
-		width: 1011px;
+		width: 1130px;
 		margin-bottom: 50px;
 	}
 	

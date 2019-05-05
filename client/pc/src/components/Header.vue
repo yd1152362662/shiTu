@@ -1,5 +1,5 @@
 <template>
-	<header>
+	<header id="Header">
 		<div class="top">
 			<el-col :span='18' :offset='3'>
 				<div class="content">
@@ -8,10 +8,10 @@
 					</router-link>
 					<div class="search">
 						<div class="input">
-							<el-input v-model='input' placeholder='请输入菜谱/食材/菜单/作者'></el-input>
+							<el-input v-model='input' placeholder='请输入菜谱/食材/菜单/作者' ></el-input>
 						</div>
 						<div class="btn">
-							<el-button>搜索</el-button>
+								<el-button @click="searchResult">搜索</el-button>
 						</div>
 					</div>
 					<div class="user" v-if="!this.$store.state.userState.flag">
@@ -25,14 +25,14 @@
 							<span class="name">{{this.$store.state.userState.u_name}}</span>
 						</router-link>
 						<router-link to='/personal' class='link'>个人中心</router-link>
-						<router-link to='/Loadding' class='link'>发布菜谱</router-link>
+						<!--<router-link to='/Loadding' class='link'>发布菜谱</router-link>-->
 						<span class='quit' @click='userQuit'>注销</span>
 					</div>
 				</div>
 			</el-col>
 		</div>
 		<div class="nav">
-			<el-col :span='18' :offset='3'>
+			<el-col :span='18' :offset='6'>
 				<nav>
 					<ul>
 						<li>
@@ -199,6 +199,10 @@
 				});
 				alert('您已安全退出该账户...');
 				this.$router.replace('/home');
+			},
+			searchResult(){
+				this.$store.state.search=this.input;
+				this.$router.push({name:'Search',params:{search:this.$store.state.search}})
 			}
 		},
 		computed: {
@@ -279,7 +283,8 @@
 	.content .sign_in img {
 		width: 36px;
 		height: 36px;
-		vertical-align: top;
+		line-height: 50px;
+		vertical-align: middle;
 		margin: 0;
 	}
 	.sign_in>a {
@@ -383,7 +388,7 @@
 		right: 0;
 	}
 	nav li:hover {
-		background-color: #E1FFFF;
+		background-color: wheat;
 	}
 	.active {
 		border-bottom: 4px solid #8B4513;
@@ -394,7 +399,7 @@
 		z-index: 9999;
 		width: 984px;
 		height: 280px;
-		background-color: #E1FFFF;
+		background-color: wheat;
 		display: none;
 		box-shadow: 3px 1px 2px 1px #DCDCDC;
 	}

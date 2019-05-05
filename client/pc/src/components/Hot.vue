@@ -88,7 +88,7 @@
 	}
 	
 	.views {
-		width: 1011px;
+		width: 1140px;
 		height: 804px;
 		position: relative;
 		overflow: hidden;
@@ -133,15 +133,15 @@
 	}
 	
 	.leftTwo {
-		left: -1017px;
+		left: -1180px;
 	}
 	
 	.leftThree {
-		left: -2034px;
+		left: -2360px;
 	}
 	
 	.leftFour {
-		left: -3051px;
+		left: 0px;
 	}
 	
 	.prev_btn,
@@ -162,7 +162,7 @@
 	}
 	
 	.next_btn {
-		right: -130px;
+		right: -251px;
 		background-position: 0 -130px;
 	}
 	

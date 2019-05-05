@@ -492,7 +492,9 @@
 							material: val.material
 						}
 					}).then(response => {
+//						console.log(response.data)
 						_this.menu_info = response.data;
+						
 					})
 				},
 				deep: true
